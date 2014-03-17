@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -33,6 +33,7 @@
         <activity
             android:name="android.v3.ThemeDarkActivity"
             android:label="@string/title_activity_theme_dark"
+            android:theme="@android:style/Theme.Holo"
             android:parentActivityName="android.v3.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -41,6 +42,7 @@
         <activity
             android:name="android.v3.ThemeLightActivity"
             android:label="@string/title_activity_theme_light"
+            android:theme="@android:style/Theme.Holo.Light"
             android:parentActivityName="android.v3.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -49,6 +51,7 @@
         <activity
             android:name="android.v3.ThemeDarkLightActivity"
             android:label="@string/title_activity_theme_dark_light"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
             android:parentActivityName="android.v3.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

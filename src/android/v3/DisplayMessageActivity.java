@@ -29,8 +29,6 @@ public class DisplayMessageActivity extends Activity {
 		
 		// Show the Up button in the action bar.
 		setupActionBar();
-		
-		
 	}
 
 	
@@ -38,7 +36,7 @@ public class DisplayMessageActivity extends Activity {
 	 * Set up the {@link android.app.ActionBar}.
 	 */
 	private void setupActionBar() {
-
+		// When minSdkVersion is 11 or Higher
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 	}
