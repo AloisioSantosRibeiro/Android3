@@ -33,7 +33,6 @@ public final class R {
         public static final int action_ThemeImage=0x7f080006;
         public static final int action_ThemeLight=0x7f080003;
         public static final int action_help=0x7f080001;
-        public static final int action_settings=0x7f080007;
         public static final int edit_message=0x7f080000;
     }
     public static final class layout {

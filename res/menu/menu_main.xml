@@ -5,7 +5,7 @@
         android:icon="@drawable/ic_action_dark_help"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="@string/action_help"/>
+        android:title="@string/action_help" />
     
     <item
         android:id="@+id/action_ThemeDark"
