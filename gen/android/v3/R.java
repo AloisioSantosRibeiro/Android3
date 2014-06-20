@@ -106,5 +106,17 @@ public final class R {
         /**  the theme applied to the application or activity 
          */
         public static final int CustomActionBarTheme=0x7f060002;
+        /**     <item name="android:actionMenuTextColor">@color/actionbar_text</item>    
+         */
+        public static final int CustomActionBarTheme2=0x7f060004;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBar=0x7f060005;
+        /**  ActionBar tabs text styles 
+         */
+        public static final int MyActionBarTabText=0x7f060007;
+        /**  ActionBar title text 
+         */
+        public static final int MyActionBarTitleText=0x7f060006;
     }
 }
