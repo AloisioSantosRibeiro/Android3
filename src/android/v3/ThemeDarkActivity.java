@@ -65,11 +65,11 @@ public class ThemeDarkActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	public void hideActionBar(View button_hideActionBar) {
+	public void fHideActionBar(View button_hideActionBar) {
 		getActionBar().hide();
 	}
 	
-	public void showActionBar(View button_showActionBar) {
+	public void fShowActionBar(View button_showActionBar) {
 		getActionBar().show();
 	}
 }
