@@ -54,6 +54,9 @@ public class MainActivity extends Activity {
 	    	case R.id.action_ThemeImage:
 	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
 	    		return true;
+	    	case R.id.action_ThemeOverlayActionBar:	
+	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
+	    		return true;
 	   		default:
 	   			return super.onOptionsItemSelected(item);
     	}

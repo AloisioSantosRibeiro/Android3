@@ -2,6 +2,7 @@ package tools;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.v3.ActionBarOverlayActivity;
 import android.v3.ThemeColorActivity;
 import android.v3.ThemeDarkActivity;
 import android.v3.ThemeDarkLightActivity;
@@ -39,5 +40,11 @@ public class MenuFunctions {
     	Intent intent = new Intent(origin, ThemeImageActivity.class);
     	origin.startActivity(intent);
     }
-
+    
+    
+    public static void fOpenOverlayActionBarThemeActivity(Activity origin) {
+    	Intent intent = new Intent(origin, ActionBarOverlayActivity.class);
+    	origin.startActivity(intent);
+	}
+	
 }

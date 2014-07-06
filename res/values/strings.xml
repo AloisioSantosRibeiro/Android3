@@ -8,6 +8,7 @@
     <string name="action_ThemeDarkLight">Dark/Light</string>
     <string name="action_ThemeColor">Color</string>
     <string name="action_ThemeImage">Image</string>
+    <string name="action_OverlayActionBar">Overlay</string>
     <string name="hello_android">Hello Android3!</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
@@ -21,5 +22,6 @@
     <string name="title_activity_theme_dark_light">Dark / Light Theme</string>
     <string name="title_activity_theme_color">Color Theme</string>
     <string name="title_activity_theme_image">Image Theme</string>
+    <string name="title_activity_action_bar_overlay">ActionBarOverlay</string>
 
 </resources>
