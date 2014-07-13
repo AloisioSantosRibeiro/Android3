@@ -3,9 +3,10 @@
 
     <string name="app_name">Android3</string>
     <string name="action_help">Help</string>
-    <string name="action_ThemeDark">Dark</string>
-    <string name="action_ThemeLight">Light</string>
-    <string name="action_ThemeDarkLight">Dark/Light</string>
+    <string name="androidThemes">Android Themes</string>
+    <string name="action_ThemeDark">Dark Theme</string>
+    <string name="action_ThemeLight">Light Theme</string>
+    <string name="action_ThemeDarkLight">Light and Dark Bar Theme</string>
     <string name="action_ThemeColor">Color</string>
     <string name="action_ThemeImage">Image</string>
     <string name="action_OverlayActionBar">Overlay</string>
@@ -23,5 +24,6 @@
     <string name="title_activity_theme_color">Color Theme</string>
     <string name="title_activity_theme_image">Image Theme</string>
     <string name="title_activity_action_bar_overlay">ActionBarOverlay</string>
+    <string name="title_activity_android_themes">AndroidThemesActivity</string>
 
 </resources>

@@ -63,21 +63,6 @@ public class DisplayMessageActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeColor:
-	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeImage:
-	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
-	    		return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}

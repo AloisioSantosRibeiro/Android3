@@ -46,14 +46,8 @@ public class ThemeDarkActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
+	    	case R.id.action_AndroidThemes:
 	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemeColor:
 	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
@@ -65,9 +59,21 @@ public class ThemeDarkActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	
+	public void fOpenLightThemeActivity(View view) {
+		tools.MenuFunctions.fOpenLightThemeActivity(this);
+	}
+
+	
+	public void fOpenDarkLightThemeActivity(View view) {
+		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+	}
+
+	
 	public void fHideActionBar(View button_hideActionBar) {
 		getActionBar().hide();
 	}
+
 	
 	public void fShowActionBar(View button_showActionBar) {
 		getActionBar().show();

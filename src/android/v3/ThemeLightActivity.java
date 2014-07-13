@@ -1,10 +1,11 @@
 package android.v3;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.view.View;
 
 public class ThemeLightActivity extends Activity {
 
@@ -16,6 +17,7 @@ public class ThemeLightActivity extends Activity {
 		setupActionBar();
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
@@ -25,6 +27,7 @@ public class ThemeLightActivity extends Activity {
 
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -32,6 +35,7 @@ public class ThemeLightActivity extends Activity {
 		return true;
 	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -45,14 +49,8 @@ public class ThemeLightActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
+	    	case R.id.action_AndroidThemes:
 	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	    		return true;
 	    	case R.id.action_ThemeColor:
 	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
@@ -64,4 +62,13 @@ public class ThemeLightActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	
+	public void fOpenDarkThemeActivity(View view) {
+		tools.MenuFunctions.fOpenDarkThemeActivity(this);
+	}
+
+	
+	public void fOpenDarkLightThemeActivity(View view) {
+		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+	}
 }

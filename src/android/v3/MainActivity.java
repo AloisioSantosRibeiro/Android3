@@ -39,15 +39,9 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	// Handle presses on the action bar items
     	switch (item.getItemId()) {
-	    	case R.id.action_ThemeDark:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
-	    		return true;
+    		case R.id.action_AndroidThemes:
+    			tools.MenuFunctions.fOpenLightThemeActivity(this);
+    			return true;
 	    	case R.id.action_ThemeColor:
 	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
 	    		return true;
