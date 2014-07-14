@@ -32,14 +32,11 @@ public final class R {
         public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int action_AndroidThemes=0x7f080004;
-        public static final int action_ColoredTitlesThemes=0x7f080005;
-        public static final int action_ThemeColor=0x7f08000b;
-        public static final int action_ThemeDark=0x7f080008;
-        public static final int action_ThemeDarkLight=0x7f08000a;
-        public static final int action_ThemeImage=0x7f080006;
-        public static final int action_ThemeLight=0x7f080009;
+        public static final int action_ThemeImages=0x7f080006;
         public static final int action_ThemeOverlayActionBar=0x7f080007;
+        public static final int action_ThemesAndroid=0x7f080004;
+        public static final int action_ThemesColoredTitles=0x7f080005;
+        public static final int action_ThemesImage=0x7f080008;
         public static final int action_help=0x7f080003;
         public static final int action_settings=0x7f080002;
         public static final int container=0x7f080000;
@@ -76,7 +73,6 @@ public final class R {
         public static final int action_OverlayActionBar=0x7f05000b;
         public static final int action_ThemeDark=0x7f050003;
         public static final int action_ThemeDarkLight=0x7f050005;
-        public static final int action_ThemeImage=0x7f05000a;
         public static final int action_ThemeLight=0x7f050004;
         public static final int action_help=0x7f050001;
         public static final int action_settings=0x7f050011;
@@ -89,11 +85,11 @@ public final class R {
         public static final int coloredTitles=0x7f050006;
         public static final int edit_message=0x7f05000c;
         public static final int greenTitle=0x7f050008;
+        public static final int imageThemes=0x7f05000a;
         public static final int redTitle=0x7f050007;
-        public static final int title_activity_action_bar_overlay=0x7f050013;
-        public static final int title_activity_android_themes=0x7f050014;
+        public static final int title_activity_action_bar_overlay=0x7f050012;
+        public static final int title_activity_android_themes=0x7f050013;
         public static final int title_activity_display_message=0x7f050010;
-        public static final int title_activity_theme_image=0x7f050012;
     }
     public static final class style {
         /**  ActionBar styles 

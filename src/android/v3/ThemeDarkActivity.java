@@ -46,14 +46,14 @@ public class ThemeDarkActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_AndroidThemes:
+	    	case R.id.action_ThemesAndroid:
 	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
 	    		return true;
-	    	case R.id.action_ColoredTitlesThemes:
+	    	case R.id.action_ThemesColoredTitles:
 	    		tools.MenuFunctions.fOpenThemeColorTitleGreenActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeImage:
-	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
+	    	case R.id.action_ThemesImage:
+	    		tools.MenuFunctions.fOpenThemeImageActivity(this);
 	    		return true;
 		}
 		return super.onOptionsItemSelected(item);

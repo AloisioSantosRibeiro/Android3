@@ -49,8 +49,8 @@ public class MenuFunctions {
     	origin.startActivity(intent);
     }
     
-    
-    public static void fOpenImageThemeActivity(Activity origin) {
+        
+    public static void fOpenThemeImageActivity(Activity origin) {
     	Intent intent = new Intent(origin, ThemeImageActivity.class);
     	origin.startActivity(intent);
     }

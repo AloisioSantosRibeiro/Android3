@@ -11,8 +11,7 @@
 		    <string name="redTitle">Red Title</string>
 		    <string name="greenTitle">Green Title</string>
 		    <string name="blueTitle">Blue Title</string>
-    <string name="action_ThemeImage">Image</string>
-
+    <string name="imageThemes">Image Theme</string>
     <string name="action_OverlayActionBar">Overlay</string>
 
     <string name="edit_message">Enter a message</string>
@@ -24,7 +23,6 @@
     <string name="title_activity_display_message">Display Message</string>
     <string name="action_settings">Settings</string>
 
-    <string name="title_activity_theme_image">Image Theme</string>
     <string name="title_activity_action_bar_overlay">ActionBarOverlay</string>
     <string name="title_activity_android_themes">AndroidThemesActivity</string>
 

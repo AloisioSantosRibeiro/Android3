@@ -39,14 +39,14 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	// Handle presses on the action bar items
     	switch (item.getItemId()) {
-    		case R.id.action_AndroidThemes:
+    		case R.id.action_ThemesAndroid:
     			tools.MenuFunctions.fOpenLightThemeActivity(this);
     			return true;
-	    	case R.id.action_ColoredTitlesThemes:
+	    	case R.id.action_ThemesColoredTitles:
 	    		tools.MenuFunctions.fOpenThemeColorTitleBlueActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeImage:
-	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
+	    	case R.id.action_ThemesImage:
+	    		tools.MenuFunctions.fOpenThemeImageActivity(this);
 	    		return true;
 	    	case R.id.action_ThemeOverlayActionBar:	
 	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
