@@ -42,8 +42,8 @@ public class MainActivity extends Activity {
     		case R.id.action_AndroidThemes:
     			tools.MenuFunctions.fOpenLightThemeActivity(this);
     			return true;
-	    	case R.id.action_ThemeColor:
-	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
+	    	case R.id.action_ColoredTitlesThemes:
+	    		tools.MenuFunctions.fOpenThemeColorTitleBlueActivity(this);
 	    		return true;
 	    	case R.id.action_ThemeImage:
 	    		tools.MenuFunctions.fOpenImageThemeActivity(this);

@@ -7,16 +7,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ThemeDarkActivity extends Activity {
+public class ThemeColorTitleGreenActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_theme_dark);
+		setContentView(R.layout.activity_theme_color_title_green);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
@@ -26,10 +27,11 @@ public class ThemeDarkActivity extends Activity {
 
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_theme_dark, menu);
+		getMenuInflater().inflate(R.menu.theme_color_title_green, menu);
 		return true;
 	}
 
@@ -46,36 +48,23 @@ public class ThemeDarkActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_AndroidThemes:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ColoredTitlesThemes:
-	    		tools.MenuFunctions.fOpenThemeColorTitleGreenActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeImage:
-	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
-	    		return true;
+			case R.id.action_AndroidThemes:
+				tools.MenuFunctions.fOpenDarkThemeActivity(this);
+				return true;
+			case R.id.action_ColoredTitlesThemes:
+				tools.MenuFunctions.fOpenThemeColorTitleGreenActivity(this);
+				return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 
-	
-	public void fOpenLightThemeActivity(View view) {
-		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	}
 
-	
-	public void fOpenDarkLightThemeActivity(View view) {
-		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
+	public void fOpenThemeColorTitleBlue(View view) {
+		tools.MenuFunctions.fOpenThemeColorTitleBlueActivity(this);
 	}
-
 	
-	public void fHideActionBar(View button_hideActionBar) {
-		getActionBar().hide();
-	}
-
 	
-	public void fShowActionBar(View button_showActionBar) {
-		getActionBar().show();
+	public void fOpenThemeColorTitleRed(View view) {
+		tools.MenuFunctions.fOpenThemeColorTitleRedActivity(this);
 	}
 }

@@ -52,8 +52,8 @@ public class ThemeDarkLightActivity extends Activity {
 	    	case R.id.action_AndroidThemes:
 	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	    		return true;
-	    	case R.id.action_ThemeColor:
-	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
+	    	case R.id.action_ColoredTitlesThemes:
+	    		tools.MenuFunctions.fOpenThemeColorTitleRedActivity(this);
 	    		return true;
 	    	case R.id.action_ThemeImage:
 	    		tools.MenuFunctions.fOpenImageThemeActivity(this);

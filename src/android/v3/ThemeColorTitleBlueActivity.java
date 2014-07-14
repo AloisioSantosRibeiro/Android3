@@ -1,21 +1,23 @@
 package android.v3;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.view.View;
 
-public class ThemeColorActivity extends Activity {
+public class ThemeColorTitleBlueActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_theme_color);
+		setContentView(R.layout.activity_theme_color_title_blue);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
@@ -25,13 +27,15 @@ public class ThemeColorActivity extends Activity {
 
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_theme_color, menu);
+		getMenuInflater().inflate(R.menu.theme_color_title_blue, menu);
 		return true;
 	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -45,23 +49,23 @@ public class ThemeColorActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-	    	case R.id.action_ThemeDark:
-	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeLight:
-	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeDarkLight:
-	    		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeColor:
-	    		tools.MenuFunctions.fOpenColorThemeActivity(this);
-	    		return true;
-	    	case R.id.action_ThemeImage:
-	    		tools.MenuFunctions.fOpenImageThemeActivity(this);
-	    		return true;
+			case R.id.action_AndroidThemes:
+				tools.MenuFunctions.fOpenLightThemeActivity(this);
+				return true;
+			case R.id.action_ColoredTitlesThemes:
+				tools.MenuFunctions.fOpenThemeColorTitleBlueActivity(this);
+				return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 
+	
+	public void fOpenThemeColorTitleGreen(View view) {
+		tools.MenuFunctions.fOpenThemeColorTitleGreenActivity(this);
+	}
+	
+	
+	public void fOpenThemeColorTitleRed(View view) {
+		tools.MenuFunctions.fOpenThemeColorTitleRedActivity(this);
+	}
 }

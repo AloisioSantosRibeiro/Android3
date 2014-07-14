@@ -33,7 +33,8 @@ public final class R {
     }
     public static final class id {
         public static final int action_AndroidThemes=0x7f080004;
-        public static final int action_ThemeColor=0x7f080005;
+        public static final int action_ColoredTitlesThemes=0x7f080005;
+        public static final int action_ThemeColor=0x7f08000b;
         public static final int action_ThemeDark=0x7f080008;
         public static final int action_ThemeDarkLight=0x7f08000a;
         public static final int action_ThemeImage=0x7f080006;
@@ -49,49 +50,50 @@ public final class R {
         public static final int activity_android_themes=0x7f030001;
         public static final int activity_display_message=0x7f030002;
         public static final int activity_main=0x7f030003;
-        public static final int activity_theme_color=0x7f030004;
-        public static final int activity_theme_dark=0x7f030005;
-        public static final int activity_theme_dark_light=0x7f030006;
-        public static final int activity_theme_image=0x7f030007;
-        public static final int activity_theme_light=0x7f030008;
-        public static final int fragment_action_bar_overlay=0x7f030009;
+        public static final int activity_theme_color_title_blue=0x7f030004;
+        public static final int activity_theme_color_title_green=0x7f030005;
+        public static final int activity_theme_color_title_red=0x7f030006;
+        public static final int activity_theme_dark=0x7f030007;
+        public static final int activity_theme_dark_light=0x7f030008;
+        public static final int activity_theme_image=0x7f030009;
+        public static final int activity_theme_light=0x7f03000a;
+        public static final int fragment_action_bar_overlay=0x7f03000b;
     }
     public static final class menu {
         public static final int action_bar_overlay=0x7f070000;
         public static final int android_themes=0x7f070001;
         public static final int menu_display_message=0x7f070002;
         public static final int menu_main=0x7f070003;
-        public static final int menu_theme_color=0x7f070004;
-        public static final int menu_theme_dark=0x7f070005;
-        public static final int menu_theme_dark_light=0x7f070006;
-        public static final int menu_theme_image=0x7f070007;
-        public static final int menu_theme_light=0x7f070008;
+        public static final int menu_theme_dark=0x7f070004;
+        public static final int menu_theme_dark_light=0x7f070005;
+        public static final int menu_theme_image=0x7f070006;
+        public static final int menu_theme_light=0x7f070007;
+        public static final int theme_color_title_blue=0x7f070008;
+        public static final int theme_color_title_green=0x7f070009;
+        public static final int theme_color_title_red=0x7f07000a;
     }
     public static final class string {
-        public static final int action_OverlayActionBar=0x7f050008;
-        public static final int action_ThemeColor=0x7f050006;
+        public static final int action_OverlayActionBar=0x7f05000b;
         public static final int action_ThemeDark=0x7f050003;
         public static final int action_ThemeDarkLight=0x7f050005;
-        public static final int action_ThemeImage=0x7f050007;
+        public static final int action_ThemeImage=0x7f05000a;
         public static final int action_ThemeLight=0x7f050004;
         public static final int action_help=0x7f050001;
-        public static final int action_settings=0x7f050010;
+        public static final int action_settings=0x7f050011;
         public static final int androidThemes=0x7f050002;
         public static final int app_name=0x7f050000;
-        public static final int button_hideActionBar=0x7f05000c;
-        public static final int button_send=0x7f05000b;
-        public static final int button_showActionBar=0x7f05000d;
-        public static final int edit_message=0x7f05000a;
-        public static final int hello_android=0x7f050009;
-        public static final int hello_world=0x7f050011;
-        public static final int title_activity_action_bar_overlay=0x7f050016;
-        public static final int title_activity_android_themes=0x7f050017;
-        public static final int title_activity_display_message=0x7f05000e;
-        public static final int title_activity_theme_color=0x7f050014;
-        public static final int title_activity_theme_dark=0x7f05000f;
-        public static final int title_activity_theme_dark_light=0x7f050013;
-        public static final int title_activity_theme_image=0x7f050015;
-        public static final int title_activity_theme_light=0x7f050012;
+        public static final int blueTitle=0x7f050009;
+        public static final int button_hideActionBar=0x7f05000e;
+        public static final int button_send=0x7f05000d;
+        public static final int button_showActionBar=0x7f05000f;
+        public static final int coloredTitles=0x7f050006;
+        public static final int edit_message=0x7f05000c;
+        public static final int greenTitle=0x7f050008;
+        public static final int redTitle=0x7f050007;
+        public static final int title_activity_action_bar_overlay=0x7f050013;
+        public static final int title_activity_android_themes=0x7f050014;
+        public static final int title_activity_display_message=0x7f050010;
+        public static final int title_activity_theme_image=0x7f050012;
     }
     public static final class style {
         /**  ActionBar styles 
@@ -126,18 +128,42 @@ public final class R {
         /**  the theme applied to the application or activity 
          */
         public static final int CustomActionBarTheme=0x7f060002;
+        public static final int CustomActionBarThemeOverlay=0x7f060010;
         /**     <item name="android:actionMenuTextColor">@color/actionbar_text</item>    
          */
-        public static final int CustomActionBarTheme2=0x7f060004;
-        public static final int CustomActionBarThemeOverlay=0x7f060008;
+        public static final int CustomActionBarThemeTitleBlue=0x7f060004;
+        /**     <item name="android:actionMenuTextColor">@color/actionbar_text</item>    
+         */
+        public static final int CustomActionBarThemeTitleGreen=0x7f060008;
+        /**     <item name="android:actionMenuTextColor">@color/actionbar_text</item>    
+         */
+        public static final int CustomActionBarThemeTitleRed=0x7f06000c;
         /**  ActionBar styles 
          */
-        public static final int MyActionBar=0x7f060005;
+        public static final int MyActionBarBlue=0x7f060005;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBarGreen=0x7f060009;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBarRed=0x7f06000d;
         /**  ActionBar tabs text styles 
          */
-        public static final int MyActionBarTabText=0x7f060007;
+        public static final int MyActionBarTabTextBlue=0x7f060007;
+        /**  ActionBar tabs text styles 
+         */
+        public static final int MyActionBarTabTextGreen=0x7f06000b;
+        /**  ActionBar tabs text styles 
+         */
+        public static final int MyActionBarTabTextRed=0x7f06000f;
         /**  ActionBar title text 
          */
-        public static final int MyActionBarTitleText=0x7f060006;
+        public static final int MyActionBarTitleTextBlue=0x7f060006;
+        /**  ActionBar title text 
+         */
+        public static final int MyActionBarTitleTextGreen=0x7f06000a;
+        /**  ActionBar title text 
+         */
+        public static final int MyActionBarTitleTextRed=0x7f06000e;
     }
 }

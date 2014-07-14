@@ -59,10 +59,28 @@
                 android:value="android.v3.MainActivity" />
         </activity>
         <activity
-            android:name="android.v3.ThemeColorActivity"
-            android:label="@string/title_activity_theme_color"
+            android:name="android.v3.ThemeColorTitleBlueActivity"
+            android:label="@string/coloredTitles"
             android:parentActivityName="android.v3.MainActivity"
-            android:theme="@style/CustomActionBarTheme2" >
+            android:theme="@style/CustomActionBarThemeTitleBlue" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v3.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v3.ThemeColorTitleGreenActivity"
+            android:label="@string/coloredTitles"
+            android:parentActivityName="android.v3.MainActivity"
+            android:theme="@style/CustomActionBarThemeTitleGreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v3.MainActivity" />
+        </activity>
+        <activity
+            android:name="android.v3.ThemeColorTitleRedActivity"
+            android:label="@string/coloredTitles"
+            android:parentActivityName="android.v3.MainActivity"
+            android:theme="@style/CustomActionBarThemeTitleRed" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.v3.MainActivity" />
