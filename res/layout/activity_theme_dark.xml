@@ -31,16 +31,4 @@
         android:text="@string/action_ThemeDarkLight"
         android:onClick="fOpenDarkLightThemeActivity" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_hideActionBar"
-        android:onClick="fHideActionBar" />
-    
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_showActionBar"
-        android:onClick="fShowActionBar" />
-        
 </LinearLayout>

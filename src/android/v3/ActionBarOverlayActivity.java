@@ -24,6 +24,7 @@ public class ActionBarOverlayActivity extends Activity {
 		}
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -32,18 +33,28 @@ public class ActionBarOverlayActivity extends Activity {
 		return true;
 	}
 
+	
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
-
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	// Handle presses on the action bar items
+    	switch (item.getItemId()) {
+    		case R.id.action_ThemesAndroid:
+    			tools.MenuFunctions.fOpenLightThemeActivity(this);
+    			return true;
+	    	case R.id.action_ThemesColoredTitles:
+	    		tools.MenuFunctions.fOpenThemeColorTitleBlueActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesImage:
+	    		tools.MenuFunctions.fOpenThemeImageActivity(this);
+	    		return true;
+	    	case R.id.action_ThemesOverlayActionBar:
+	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
+	    		return true;
+	   		default:
+	   			return super.onOptionsItemSelected(item);
+    	}
+    }
+	
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
@@ -61,9 +72,11 @@ public class ActionBarOverlayActivity extends Activity {
 		}
 	}
 
+	
 	public void fHideActionBar(View button_hideActionBar) {
 		getActionBar().hide();
 	}
+	
 	
 	public void fShowActionBar(View button_showActionBar) {
 		getActionBar().show();

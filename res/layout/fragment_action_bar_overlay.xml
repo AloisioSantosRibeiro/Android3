@@ -17,13 +17,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_hideActionBar"
+        android:text="@string/hideActionBar"
         android:onClick="fHideActionBar" />
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_showActionBar"
+        android:text="@string/showActionBar"
         android:onClick="fShowActionBar" />
     
 </LinearLayout>

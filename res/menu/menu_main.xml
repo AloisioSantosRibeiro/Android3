@@ -20,15 +20,21 @@
         android:title="@string/coloredTitles" />
     
     <item
-        android:id="@+id/action_ThemeImages"
+        android:id="@+id/action_ThemesImage"
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/imageThemes" />
-    
+
     <item
-        android:id="@+id/action_ThemeOverlayActionBar"
+        android:id="@+id/action_ThemesHideActionBar"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_OverlayActionBar" />
+        android:title="@string/hideActionBar" />
+    
+    <item
+        android:id="@+id/action_ThemesOverlayActionBar"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/overlayActionBar" />
     
 </menu>
