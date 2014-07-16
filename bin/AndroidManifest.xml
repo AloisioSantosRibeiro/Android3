@@ -113,6 +113,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.v3.MainActivity" />
         </activity>
+        <activity
+            android:name="android.v3.ThemeHideActionBarActivity"
+            android:label="@string/title_activity_theme_hide_action_bar"
+            android:parentActivityName="android.v3.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v3.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

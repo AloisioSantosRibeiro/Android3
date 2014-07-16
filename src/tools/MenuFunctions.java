@@ -2,14 +2,15 @@ package tools;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.v3.ActionBarOverlayActivity;
 import android.v3.ThemeColorTitleBlueActivity;
 import android.v3.ThemeColorTitleGreenActivity;
 import android.v3.ThemeColorTitleRedActivity;
 import android.v3.ThemeDarkActivity;
 import android.v3.ThemeDarkLightActivity;
-import android.v3.ThemeImageActivity;
 import android.v3.ThemeLightActivity;
+import android.v3.ThemeImageActivity;
+import android.v3.ThemeHideActionBarActivity;
+import android.v3.ActionBarOverlayActivity;
 
 
 public class MenuFunctions {
@@ -52,6 +53,12 @@ public class MenuFunctions {
         
     public static void fOpenThemeImageActivity(Activity origin) {
     	Intent intent = new Intent(origin, ThemeImageActivity.class);
+    	origin.startActivity(intent);
+    }
+    
+
+    public static void fOpenThemeHideActionBarActivity(Activity origin) {
+    	Intent intent = new Intent(origin, ThemeHideActionBarActivity.class);
     	origin.startActivity(intent);
     }
     

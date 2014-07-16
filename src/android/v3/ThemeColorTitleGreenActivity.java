@@ -57,6 +57,9 @@ public class ThemeColorTitleGreenActivity extends Activity {
 			case R.id.action_ThemesImage:
 				tools.MenuFunctions.fOpenThemeImageActivity(this);
 				return true;
+	    	case R.id.action_ThemesHideActionBar:
+	    		tools.MenuFunctions.fOpenThemeHideActionBarActivity(this);
+	    		return true;
 	    	case R.id.action_ThemesOverlayActionBar:
 	    		tools.MenuFunctions.fOpenOverlayActionBarThemeActivity(this);
 	    		return true;
