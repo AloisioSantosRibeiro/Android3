@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android3</string>
+    <string name="action_help">Ajuda</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="androidThemes">Temas Android</string>
+    <string name="action_ThemeDark">Tema: Dark</string>
+    <string name="action_ThemeLight">Tema: Light</string>
+    <string name="action_ThemeDarkLight">Tema: Light e Barra Dark</string>
+
+    <string name="coloredTitles">Titulos Coloridos</string>
+    <string name="redTitle">Titulo Vermelho</string>
+    <string name="greenTitle">Titulo Verde</string>
+    <string name="blueTitle">Titulo Azul</string>
+    
+    <string name="imageThemes">Tema Imagem</string>
+    
+    <string name="edit_message">Digite uma menssagem</string>
+    <string name="button_send">Enviar</string>
+    
+    <string name="overlayActionBar">Overlay ActionBar</string>
+    <string name="hideActionBar">Hide ActionBar</string>
+    <string name="showActionBar">Show ActionBar</string>
+    
+    <string name="title_activity_display_message">Display Message</string>
+    <string name="title_activity_android_themes">AndroidThemesActivity</string>
+
+</resources>

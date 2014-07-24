@@ -6,6 +6,7 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class ThemeDarkActivity extends Activity {
 
@@ -46,6 +47,9 @@ public class ThemeDarkActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
+    		case R.id.action_help:
+	    		Toast.makeText(ThemeDarkActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+	    		return true;
 	    	case R.id.action_ThemesAndroid:
 	    		tools.MenuFunctions.fOpenDarkThemeActivity(this);
 	    		return true;
@@ -75,13 +79,4 @@ public class ThemeDarkActivity extends Activity {
 		tools.MenuFunctions.fOpenDarkLightThemeActivity(this);
 	}
 
-	
-	public void fHideActionBar(View button_hideActionBar) {
-		getActionBar().hide();
-	}
-
-	
-	public void fShowActionBar(View button_showActionBar) {
-		getActionBar().show();
-	}
 }

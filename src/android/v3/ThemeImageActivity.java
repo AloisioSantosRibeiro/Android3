@@ -1,10 +1,11 @@
 package android.v3;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.widget.Toast;
 
 public class ThemeImageActivity extends Activity {
 
@@ -12,7 +13,7 @@ public class ThemeImageActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_theme_image);
-		// Show the Up button in the action bar.
+		// Set up the action bar.
 		setupActionBar();
 	}
 
@@ -45,6 +46,9 @@ public class ThemeImageActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
+    		case R.id.action_help:
+	    		Toast.makeText(ThemeImageActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+	    		return true;
 	    	case R.id.action_ThemesAndroid:
 	    		tools.MenuFunctions.fOpenLightThemeActivity(this);
 	    		return true;

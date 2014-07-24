@@ -1,7 +1,6 @@
 package android.v3;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.Toast;
 
 public class ActionBarOverlayActivity extends Activity {
 
@@ -38,6 +37,9 @@ public class ActionBarOverlayActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	// Handle presses on the action bar items
     	switch (item.getItemId()) {
+    		case R.id.action_help:
+    			Toast.makeText(ActionBarOverlayActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+    			return true;
     		case R.id.action_ThemesAndroid:
     			tools.MenuFunctions.fOpenLightThemeActivity(this);
     			return true;

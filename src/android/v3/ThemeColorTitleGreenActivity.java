@@ -6,6 +6,7 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class ThemeColorTitleGreenActivity extends Activity {
 
@@ -48,6 +49,9 @@ public class ThemeColorTitleGreenActivity extends Activity {
 				//
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
+    		case R.id.action_help:
+	    		Toast.makeText(ThemeColorTitleGreenActivity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+	    		return true;
 			case R.id.action_ThemesAndroid:
 				tools.MenuFunctions.fOpenDarkThemeActivity(this);
 				return true;
