@@ -11,20 +11,28 @@
     <string name="action_ThemeDarkLight">Tema: Light e Barra Dark</string>
 
     <string name="coloredTitles">Titulos Coloridos</string>
-    <string name="redTitle">Titulo Vermelho</string>
-    <string name="greenTitle">Titulo Verde</string>
-    <string name="blueTitle">Titulo Azul</string>
+    <string name="redTitle">Titulo vermelho</string>
+    <string name="greenTitle">Titulo verde</string>
+    <string name="blueTitle">Titulo azul</string>
     
     <string name="imageThemes">Tema Imagem</string>
     
-    <string name="edit_message">Digite uma menssagem</string>
+    <string name="edit_message">Digite uma mensagem</string>
     <string name="button_send">Enviar</string>
     
     <string name="overlayActionBar">Overlay ActionBar</string>
-    <string name="hideActionBar">Hide ActionBar</string>
-    <string name="showActionBar">Show ActionBar</string>
+    <string name="hideActionBar">Ocultar ActionBar</string>
+    <string name="showActionBar">Exibir ActionBar</string>
+    
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+
+    <string name="portraitLangdscape">Portrait-Landspace</string>
     
     <string name="title_activity_display_message">Display Message</string>
-    <string name="title_activity_android_themes">AndroidThemesActivity</string>
 
 </resources>

@@ -104,15 +104,6 @@
                 android:value="android.v3.MainActivity" />
         </activity>
         <activity
-            android:name="android.v3.AndroidThemesActivity"
-            android:label="@string/title_activity_android_themes"
-            android:parentActivityName="android.v3.MainActivity"
-            android:theme="@android:style/Theme.Holo.Light" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="android.v3.MainActivity" />
-        </activity>
-        <activity
             android:name="android.v3.ThemeHideActionBarActivity"
             android:label="@string/hideActionBar"
             android:parentActivityName="android.v3.MainActivity" >
@@ -120,6 +111,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.v3.MainActivity" />
         </activity>
-    </application>
+        <activity
+            android:name="android.v3.Portrait_Landscape_Activity"
+            android:label="@string/portraitLangdscape"
+            android:parentActivityName="android.v3.MainActivity"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.v3.MainActivity" />
+        </activity>
+        </application>
 
 </manifest>

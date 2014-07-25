@@ -11,6 +11,7 @@ import android.v3.ThemeLightActivity;
 import android.v3.ThemeImageActivity;
 import android.v3.ThemeHideActionBarActivity;
 import android.v3.ActionBarOverlayActivity;
+import android.v3.Portrait_Landscape_Activity;
 
 
 public class MenuFunctions {
@@ -68,4 +69,9 @@ public class MenuFunctions {
     	origin.startActivity(intent);
 	}
 	
+    
+    public static void fOpenPortraitLandscapeActivity(Activity origin) {
+    	Intent intent = new Intent(origin, Portrait_Landscape_Activity.class);
+    	origin.startActivity(intent);
+    }
 }

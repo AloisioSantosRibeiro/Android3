@@ -37,4 +37,10 @@
         android:showAsAction="never"
         android:title="@string/overlayActionBar" />
     
+    <item
+        android:id="@+id/action_Portrait_Landscape"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/portraitLangdscape" />
+    
 </menu>
