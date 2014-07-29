@@ -36,19 +36,21 @@ public class Portrait_Landscape_Activity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case android.R.id.home:
-			// This ID represents the Home or Up button. In the case of this
-			// activity, the Up button is shown. Use NavUtils to allow users
-			// to navigate up one level in the application structure. For
-			// more details, see the Navigation pattern on Android Design:
-			//
-			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
-			//
-			NavUtils.navigateUpFromSameTask(this);
-			return true;
-		case R.id.action_help:
-    		Toast.makeText(Portrait_Landscape_Activity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
-    		return true;
+			case android.R.id.home:
+				// This ID represents the Home or Up button. In the case of this
+				// activity, the Up button is shown. Use NavUtils to allow users
+				// to navigate up one level in the application structure. For
+				// more details, see the Navigation pattern on Android Design:
+				//
+				// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+				//
+				NavUtils.navigateUpFromSameTask(this);
+				return true;
+			case R.id.action_help:
+	    		Toast.makeText(Portrait_Landscape_Activity.this, R.string.action_help, Toast.LENGTH_SHORT).show();
+	    		return true;
+			case R.id.action_warning:
+				Toast.makeText(Portrait_Landscape_Activity.this, R.string.action_warning, Toast.LENGTH_SHORT).show();
 		}
 		return super.onOptionsItemSelected(item);
 	}
