@@ -12,11 +12,60 @@ public class Portrait_Landscape_Activity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onCreate, Toast.LENGTH_SHORT).show();
+
+        // Set the user interface layout for this Activity
+        // The layout file is defined in the project res/layout/main_activity.xml file
 		setContentView(R.layout.activity_portrait_landscape);
+
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
 
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onStart, Toast.LENGTH_SHORT).show();
+	}
+	
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onResume, Toast.LENGTH_SHORT).show();
+	}
+	
+	
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onRestart, Toast.LENGTH_SHORT).show();
+	}
+	
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onPause, Toast.LENGTH_SHORT).show();
+	}
+	
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onStop, Toast.LENGTH_SHORT).show();
+	}
+	
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		Toast.makeText(Portrait_Landscape_Activity.this, R.string.callback_onDestroy, Toast.LENGTH_SHORT).show();
+	}
+
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
